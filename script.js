@@ -1,4 +1,12 @@
-ul = document.getElementById("stuff")
+ul = document.getElementById("stuff");
+let btnClear = document.getElementById('clear');
+
+btnClear.addEventListener('click', clearList);
+
+function clearList(){
+    document.getElementById('stuff').innerHTML = ''
+}
+
 
 function checkTime(){
     if (window.getComputedStyle(clock).visibility === "hidden") {
